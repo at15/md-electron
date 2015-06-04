@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <title>Hello World!</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <script src="storage.js"></script>
     <script>
         $ = jQuery = require('./vendor/jquery/jquery-2.1.4.js');
@@ -12,22 +12,20 @@
     <link rel="stylesheet" href="vendor/editor.md/css/editormd.min.css"/>
 </head>
 <body>
-    <!-- Load the editor -->
-    <div id="editormd" style="height: 600px">
-        <textarea style="display:none;">
-            ### Hello Editor.md !
-            ![a](../a.jpg)
+<!-- Load the editor -->
+<div id="editormd" style="height: 600px">
+        <textarea style="display:none;">Hello Editor.md ![mie~](images/until-u.png)
         </textarea>
-    </div>
+</div>
 <script>
-    $(function() {
+    $(function () {
         var editor = editormd("editormd", {
-            path : "./vendor/editor.md/lib/", // Autoload modules mode, codemirror, marked... dependents libs path
+            path: "./vendor/editor.md/lib/", // Autoload modules mode, codemirror, marked... dependents libs path
             width: "90%",
             height: 640,
-            imageUpload : true,
-            imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-            imageUploadURL : "./php/upload.php"
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "./php/upload.php"
         });
     });
 </script>
